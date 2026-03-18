@@ -65,15 +65,15 @@
     </pluginManagement>
   </build>
   <distributionManagement>
-<repository>
-<id>repoR</id>
-<name>repoR</name>
-<url>http://3.111.144.137:8081/repository/repoR/</url>
+      <repository>
+          <id>repoR</id>
+            <name>repoR</name>
+      <url>http://3.111.144.137:8081/repository/repoR/</url>
 </repository>
-<snapshotRepository>
-<id>repoS</id>
-<name>repoS</name>
-<url>http://3.111.144.137:8081/repository/repoS/</url>
-</snapshotRepository>
+      <snapshotRepository>
+          <id>repoS</id>
+            <name>repoS</name>
+        <url>http://3.111.144.137:8081/repository/repoS/</url>
+      </snapshotRepository>
 </distributionManagement>
 </project>
