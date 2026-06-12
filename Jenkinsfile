@@ -30,6 +30,13 @@ pipeline{
 
 		}
 		}
+	stage('Static Code Analysis') {
+    steps {
+        withSonarQubeEnv('sonarserver') {
+            sh "mvn clean verify sonar:sonar -Dsonar.projectKey=testproject -Dsonar.projectName='testproject'"
+        }
+    }
+}
    stage("deploy"){
 	   steps{
 			echo "deploy success"
